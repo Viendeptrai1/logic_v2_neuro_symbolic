@@ -1,0 +1,182 @@
+[
+  {
+    "type": "truth",
+    "question": "Does it follow that if all Python projects are well-structured, then all Python projects are optimized, according to the premises?",
+    "gold_answer": "Yes",
+    "gold_fol": "∀x (WS(x) → O(x))",
+    "item_idx": 0,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Does Sophia qualify for the university scholarship, according to the premises?",
+    "gold_answer": "Yes",
+    "gold_fol": "qualifies_for_scholarship(Sophia)",
+    "item_idx": 1,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Does Sophia qualify for the university scholarship, according to the premises?",
+    "gold_answer": "Yes",
+    "gold_fol": "qualifies_for_scholarship(Sophia)",
+    "item_idx": 2,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Does John receive academic distinction, according to the premises?",
+    "gold_answer": "Yes",
+    "gold_fol": "academic_distinction(John)",
+    "item_idx": 3,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Does Professor John meet all requirements to propose new courses, according to the premises?",
+    "gold_answer": "Yes",
+    "gold_fol": "can_propose_courses(John)",
+    "item_idx": 4,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Does the logical chain demonstrate that Professor John meets all requirements for collaborative research projects?",
+    "gold_answer": "Yes",
+    "gold_fol": "can_apply_collaborative_projects(John)",
+    "item_idx": 5,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Does Alex earn a scholarship despite initial fears of fund depletion that were unfounded, attend university and gain internship opportunities through a professional network that nearly dissolved but was saved, complete an internship with mentorship despite initial mentor shortages that were resolved, develop professional skills and secure job offers at career fairs that were almost canceled but proceeded, and start a successful career after graduating with honors despite a competitive job market that improved just in time?",
+    "gold_answer": "Yes",
+    "gold_fol": "professional_network(Alex)",
+    "item_idx": 33,
+    "q_idx": 0
+  },
+  {
+    "type": "truth",
+    "question": "Does Alex not secure job offers because the job market weakened unexpectedly, and fail to start a successful career despite graduating with honors?",
+    "gold_answer": "No",
+    "gold_fol": "¬successful_career(Alex)",
+    "item_idx": 33,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "According to the above premises, is the following statement true?\nStatement: If all Python projects are well-structured, then all Python projects are optimized.",
+    "gold_answer": "Yes",
+    "gold_fol": "∀x (WellStructured(x) → Optimized(x))",
+    "item_idx": 53,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Based on the above premises, is the statement true?\nStatement: If a Raspberry Pi system is cost-effective, then it is necessarily versatile.",
+    "gold_answer": "Unknown",
+    "gold_fol": "∀x (RaspberryPiCostEffective(x) → RaspberryPiVersatile(x))",
+    "item_idx": 54,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Based on the premises, which of the following can be inferred?\nA) Tu has gained experience and improved their skills.\nB) Tu is not confident yet because they have not improved their skills.\nC) Tu has attended fewer than 2 events, so they have not gained experience.\nD) Tu has improved their skills but has not gained experience.",
+    "gold_answer": "Unknown",
+    "gold_fol": "¬ImproveSkill(Tu)",
+    "item_idx": 139,
+    "q_idx": 0
+  },
+  {
+    "type": "truth",
+    "question": "Based on the premises, which of the following can be inferred?\nA) Coke can get an internship or go to work because they are a fourth-year student.\nB) Coke is guaranteed to get a job because they are a fourth-year student.\nC) Coke has a good CV because they are a fourth-year student.\nD) Coke doesn't need a CV to get a job because they are a fourth-year student.",
+    "gold_answer": "Unknown",
+    "gold_fol": "Internship(Coke)",
+    "item_idx": 142,
+    "q_idx": 0
+  },
+  {
+    "type": "mcq",
+    "question": "Based on the above premises, which statement can be inferred?\nA. If there exists someone who attended the midterm exam, then all students attend the course, and there exists someone who attended the final exam.\nB. If there exists someone who attended the midterm exam, then all students attend the course, and if a person did not complete the required attendance, then they did not attend the course.\nC. If there exists someone who attended the midterm exam, then all students attend the course, but if a person did not complete the required attendance, they still attended the course.\nD. If there exists someone who attended the midterm exam, then all students attend the course, and if a person did not attend the course, they did not attend the final exam.",
+    "gold_answer": "A",
+    "gold_fol": "∀x (AttendedMidterm(x) → AttendsCourse(x))",
+    "options_fol": {
+      "A": "∀x (AttendedMidterm(x) → AttendsCourse(x))",
+      "B": "∀x (AttendedMidterm(x) → ¬AttendsCourse(x))",
+      "C": "∀x (AttendedMidterm(x) → ¬AttendsCourse(x))",
+      "D": "∀x (AttendedMidterm(x) → ¬AttendsCourse(x))"
+    },
+    "item_idx": 176,
+    "q_idx": 0
+  },
+  {
+    "type": "truth",
+    "question": "Based on the above premises, is the following statement true?\nStatement: If a person has permission to borrow books from the library, then they are a student allowed to borrow books, and if there exists a student who is allowed to borrow books, then there exists someone who has not borrowed more than 5 books at once.",
+    "gold_answer": "No",
+    "gold_fol": "∀x (Student(x) → ¬Student(x))",
+    "item_idx": 180,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Based on the above premises, is the following statement true?\nStatement: If there exists at least one student who is revising, then if a student is revising, they are studying, and every student is attending tutorials.",
+    "gold_answer": "Yes",
+    "gold_fol": "∀x (IsRevising(x) → IsAttendingTutorials(x))",
+    "item_idx": 226,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Based on the above premises, is the following statement true?\nStatement: If there exists at least one student who is attending tutorials, then if a student is not asking questions, they are not attending tutorials, and every student is preparing for an exam.",
+    "gold_answer": "No",
+    "gold_fol": "∀x (IsAttendingTutorials(x) → ¬IsPreparingForExam(x))",
+    "item_idx": 229,
+    "q_idx": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Based on the above premises, which statement can be inferred?\nA. If there exists at least one student who is revising, then every student is studying, and every student is attending tutorials.\nB. If there exists at least one student who is revising, then every student is studying, but not every student is attending tutorials.\nC. If there exists at least one student who is revising, then every student is studying, and if a student is not revising, then they are not asking questions.\nD. If there exists at least one student who is revising, then every student is studying, but if a student is not revising, then they are asking questions.",
+    "gold_answer": "A",
+    "gold_fol": "∀x (IsRevising(x) → IsStudying(x))",
+    "options_fol": {
+      "A": "∀x (IsRevising(x) → IsStudying(x))",
+      "B": "∀x (IsRevising(x) → ¬IsStudying(x))",
+      "C": "∀x (IsRevising(x) → ¬IsStudying(x))",
+      "D": "∀x (IsRevising(x) → ¬IsStudying(x))"
+    },
+    "item_idx": 236,
+    "q_idx": 0
+  },
+  {
+    "type": "truth",
+    "question": "Based on the above premises, is the following statement true?\nStatement: If there exists at least one student who is revising, then every student is studying, and every student is attending tutorials.",
+    "gold_answer": "Yes",
+    "gold_fol": "∀x (IsRevising(x) → IsStudying(x))",
+    "item_idx": 236,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Did Rillance’s basketball team status help qualify for a scholarship?",
+    "gold_answer": "Yes",
+    "gold_fol": "QualifyScholarship(Rillance)",
+    "item_idx": 320,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Did Ruri gain experience from the assignment?",
+    "gold_answer": "No",
+    "gold_fol": "Incorrect_Assignment(Ruri)",
+    "item_idx": 322,
+    "q_idx": 1
+  },
+  {
+    "type": "truth",
+    "question": "Is it true that if all students enrolled in Calculus I, then all students are allowed to enroll in courses?",
+    "gold_answer": "Yes",
+    "gold_fol": "∀x (EnrolledCalculusI(x) → CanEnroll(x))",
+    "item_idx": 404,
+    "q_idx": 1
+  }
+]
