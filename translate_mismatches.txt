@@ -1,0 +1,300 @@
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If learners outside specialized computer science courses never conduct an independent research project, then there is someone who has indeed completed such a project.
+Gold: ((∀x (¬SpecializedCourse(x) → ¬IndependentProject(x))) → ∃x (IndependentProject(x)))
+Gen:  ∀x (¬SpecializedComputerScience(x) → ¬IndependentResearchProject(x)) → ∃y (CompletedResearch(y))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Those who do not get an F for the assignment will pass the course.
+Gold: ∀x (¬F_Assignment(x) → Pass_Course(x))
+Gen:  ∀x (¬F(x) → P(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Every website requires HTML to structure content, CSS to style it, and JavaScript to add interactivity.
+Gold: ∀x (H(x) → S(x))
+Gen:  ∀x ((Website(x) → (RequiresHTML(x) ∧ RequiresCSS(x) ∧ RequiresJavaScript(x))))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Students in the honors program have an average credits per year (M) of 36.
+Gold: M_honors = 36
+Gen:  ∀x (HonorsProgram(x) → M(x) = 36)
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: All people who read books gain wisdom.
+Gold: ∀x (ReadsBook(x) → GainsWisdom(x))
+Gen:  ∀x (ReadsBooks(x) → GainsWisdom(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a microchip is not functional, then it does not meet performance standards.
+Gold: ∀x (not Functional(x) implies not MeetsPerformanceStandards(x))
+Gen:  ∀x (¬Functional(x) → ¬MeetsPerformanceStandards(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student has better career growth, they increase their earning potential.
+Gold: ∀x(BetterCareerGrowth(x) → IncreasesEarningPotential(x))
+Gen:  ∀x (BetterCareerGrowth(x) → IncreasedEarningPotential(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If the AI system detects cheating with over 95% confidence, the board must convene within 48 hours.
+Gold: ∀s (ai_detection(s) > 95 → board_meeting(s) ≤ 48)
+Gen:  ∀s ((confidence(s) > 0.95 → convene_board(s)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: All students complete assignments on time.
+Gold: ∀x complete(x)
+Gen:  ∀x (CompletesAssignmentsOnTime(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: In Calculus 2 for engineering students, if x having property U implies x has property P then x having property Q implies x has property T.
+Gold: (∀x (U(x) → P(x)) → ∀x (Q(x) → T(x)))
+Gen:  ∀x ((U(x) → P(x)) → (Q(x) → T(x)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student participates in internships, they gain relevant work experience.
+Gold: ∀x(ParticipatesInternships(x) → GainsWorkExperience(x))
+Gen:  ∀x (Internship(x) → RelevantWorkExperience(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If the new major requires an entrance exam, students must achieve at least 75% of the standard score.
+Gold: ∀x (application_fraud(x) → ¬council_approval(x))
+Gen:  ∀x ((new_major(x) → entrance_exam(x)) → (entrance_exam(x) → score_75(x)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If (participating in the workshop implies teamwork improvement), then (not participating implies not leading a team project).
+Gold: ∀x ((ParticipatedInWorkshop(x) → ImprovedTeamwork(x)) → (¬ParticipatedInWorkshop(x) → ¬LedTeamProject(x)))
+Gen:  ∀x ((ParticipatesWorkshop(x) → ImprovesTeamwork(x)) → (¬ParticipatesWorkshop(x) → ¬LeadsProject(x)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student doesn't take required core curriculum courses, then that student doesn't understand foundational concepts.
+Gold: ∀x (¬TakesRequiredCourses(x) → ¬UnderstandsFoundations(x))
+Gen:  ∀x (¬TakesRequiredCore(x) → ¬UnderstandsFundamentals(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Phong is in his third semester and has taken 15 credits this term.
+Gold: ∀s ((AverageScore(s) ≥ 2.0 ∧ AverageScore(s) < 2.5) → Ranking(s, Average))
+Gen:  Semester(Phong) = 3 ∧ Credits(Phong) = 15
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student does not complete assignments on time, they will not understand the material.
+Gold: ∀x (¬complete(x) → ¬understand(x))
+Gen:  ∀x (¬CompletesAssignmentsOnTime(x) → ¬UnderstandsMaterial(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student masters a subject, they can earn an A or A+.
+Gold: ∀s (∀x (Mastered(s, x) → (GradeA(s, x) ∨ GradeAPlus(s, x))))
+Gen:  ∀x (Master(x) → GradeA(x) ∨ GradeAPlus(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If someone is responsible, then they are unemployed.
+Gold: ∀x (Responsible(x) → Unemployed(x))
+Gen:  ∀x (R(x) → U(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If all students must complete a research project, then participation in extracurricular activities ensures that enrolling in a specific course grants access to university resources.
+Gold: ∀x (Enrolled(x) → Resources(x))
+Gen:  (∀x (ResearchProject(x)) → (∀y (Extracurricular(y) → (EnrolledCourse(y) → UniversityResources(y))))))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Every student submits assignments.
+Gold: ∀x (SubmitsAssignments(x))
+Gen:  ∀x S(x) → ∀x A(x)
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If at least one student has received a scholarship, then failing to follow academic policies results in no scholarship.
+Gold: (∃x (Scholarship(x)) → (¬Policy(x) → ¬Scholarship(x)))
+Gen:  (∃x S(x) → ∀y (¬P(y) → ¬S(y)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student meets the requirements, then they engage in independent learning.
+Gold: ∀x (Q(x) → U(x))
+Gen:  ∀x (MeetsRequirements(x) → EngagesIndependentLearning(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If the job market is weak, job offers are scarce.
+Gold: ∀s (weak_market → ¬job_offers(s))
+Gen:  ∀x (WeakJobMarket(x) → ScarcityOfOffers(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: CH3002 has three components: Lab, Quiz, and Homework, but Quiz scores are optional for students over 20 years old.
+Gold: ∀s ∀c (Enrolled(s, c) ∧ ¬TaughtBy(c, ProfessorX) → MustSubmitProject(s, c))
+Gen:  ∀s ((component(CH3002,s) = Lab ∧ component(CH3002,s) = Quiz ∧ component(CH3002,s) = Homework) → score(s,Quiz) ≥ 0) ∧ ∀s (age(s) > 20 → score(s,Quiz) = 0)
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Every well-ranked university has high student satisfaction.
+Gold: ∀x (University(x) ∧ WellRanked(x) → HighSatisfaction(x))
+Gen:  ∀x (W(x) → H(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: All employees in the company have completed cybersecurity training.
+Gold: ∀x (CyberTraining(x))
+Gen:  ∀x (CybersecurityTraining(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If x is not a student, then x does not understand the lectures.
+Gold: ∀x (¬Student(x) → ¬Understands(x))
+Gen:  ∀x (¬Student(x) → ¬UnderstandsLectures(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If all programmers who study regularly improve their debugging skills, then if a programmer does not understand loops, they will not understand recursion.
+Gold: (∀x (StudiesRegularly(x) → ImprovesDebuggingSkills(x)) → (¬UnderstandsLoops(x) → ¬UnderstandsRecursion(x)))
+Gen:  (∀x (StudiesRegularly(x) → ImprovesDebuggingSkills(x))) → (∀x (¬UnderstandsLoops(x) → ¬UnderstandsRecursion(x)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: There is at least one student who passes the exam.
+Gold: ∃x (PassesExam(x))
+Gen:  ∃x P(x)
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: All blockchain networks are secure.
+Gold: ∀x (Secure(x))
+Gen:  ∀x S(x)
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: At least one student has submitted their final project before the deadline.
+Gold: ∃x (SubmittedFinalProjectBeforeDeadline(x))
+Gen:  ∃x (SubmittedFinalProject(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If x has not finished all quizzes, then x is not eligible for the final exam.
+Gold: ∀x (¬Q(x) → ¬E(x))
+Gen:  ∀x (¬FinishedAllQuizzes(x) → ¬EligibleFinalExam(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a person is reckless with money, then they cannot make responsible financial decisions.
+Gold: ∀x (RecklessWithMoney(x) → ¬CanMakeResponsibleDecisions(x))
+Gen:  ∀x (RecklessWithMoney(x) → ¬ResponsibleFinancialDecisions(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student does not submit assignments, then they cannot participate in extracurricular activities.
+Gold: ∀x (¬SubmitAssignment(x) → ¬Extracurricular(x))
+Gen:  ∀x (¬SubmitsAssignments(x) → ¬ParticipatesExtracurriculars(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a course includes AI ethics, then students understand responsible AI.
+Gold: ∀x (E(x) → U(x))
+Gen:  ∀x (IncludesAI(x) → UnderstandsResponsibleAI(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a VR game meets performance requirements, then it is stable.
+Gold: ∀x (Performance(x) → Stable(x))
+Gen:  ∀x (MeetsPerformanceRequirements(x) → Stable(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student cannot conduct research, then they do not participate in extracurricular activities.
+Gold: ∀x (¬R(x) → ¬E(x))
+Gen:  ∀x (¬ConductsResearch(x) → ¬ParticipatesExtracurricular(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: There exists at least one student who is eligible to participate in the final project preparation.
+Gold: ∃x J(x)
+Gen:  ∃x (EligibleForFinalProject(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If they don't achieve 4 points or over on Calculus 1, they cannot attend Calculus 2.
+Gold: ∀x (Student(x) ∧ ≥(Score(x, Calculus1), 4) → Took(x, Calculus2))
+Gen:  ∀x ((¬P(x) → ¬Q(x)) → R(x)) → ∀x (¬P(x) → ¬R(x)) → ∀x (¬Q(x) → ¬R(x)) → ∀x (¬R(x) → Q(x)) → ∀x (¬R(x) → P(x)) → ∀x (¬Q(x) → P(x)) → ∀x (¬P(x) → ¬Q(x)) → ∀x (¬R(x) → Q(x)) → ∀x (¬R(x) → P(x)) → ∀x (¬Q(x) → P(x)) → ∀x (¬P(x) → ¬Q(x)) → ∀x (¬R(x) → Q(x)) → ∀x (¬R(x) → P(x)) → ∀x (¬Q(x) → P(x)) → ∀x (¬P(x) → ¬Q(x)) → ∀x (¬R(x) → Q(x)) → ∀x (¬R(x) → P(x)) → ∀x (¬Q(x) → P(x)) → ∀x (¬P(x) → ¬Q(x)) → ∀x (¬R(x) → Q(x)) → ∀x (¬R(x) → P(x)) → ∀x (¬Q(x) → P(x)) → ∀x (¬P(x) → ¬Q(x)) → ∀x (¬R(x) → Q(x)) →
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student does not follow the dress code, the student will be asked to change their clothes.
+Gold: ∀x (¬FollowDressCode(x) → AskToChangeClothes(x))
+Gen:  ∀x (¬FollowsDressCode(x) → ChangeClothes(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If there exists at least one student who is preparing for an exam, then there exists at least one student who is studying.
+Gold: (∃x IsPreparingForExam(x) → ∃y IsStudying(y))
+Gen:  ∃x (PreparingForExam(x)) → ∃y (Studying(y))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a broader understanding leads to mentoring first-year students, then investing time in project-based learning leads to that broader understanding.
+Gold: ((∀x ((Student(x) ∧ BroaderUnderstanding(x)) → MentorsFirstYears(x))) → (∀x ((Student(x) ∧ InvestsTimeProjectLearning(x)) → BroaderUnderstanding(x))))
+Gen:  ∀x ((BroaderUnderstanding(x) → MentorsFirstYearStudents(x)) → (InvestsTimeInProjectBasedLearning(x) → BroaderUnderstanding(x)))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Luna deploys a functioning rover.
+Gold: rover(Luna)
+Gen:  deployed_rover(Luna)
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: No entrance exam pass → No Research completion.
+Gold: ∀x (¬T(x) → ¬R(x))
+Gen:  ∀x (¬E(x) → ¬R(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If an electric vehicle is not eco-friendly, then it is not affordable.
+Gold: ∀x (¬E(x) → ¬A(x))
+Gen:  ∀x (¬EcoFriendly(x) → ¬Affordable(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: All students must comply with the institutional standards.
+Gold: ∀x (MeetsStandard(x))
+Gen:  ∀x (CompliesWithStandards(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a person is not allowed to attend the seminar, then they did not register.
+Gold: ∀x (¬AllowedToAttend(x) → ¬Registered(x))
+Gen:  ∀x (¬AllowedToAttendSeminar(x) → ¬RegisteredForSeminar(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: Every person is enrolled in the company’s development program.
+Gold: ∀x (DevelopmentProgram(x))
+Gen:  ∀x (EnrolledInDevelopmentProgram(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a hardware component delivers high performance, then it is easy to integrate.
+Gold: ∀x (HighPerformance(x) → EasyToIntegrate(x))
+Gen:  ∀x (HighPerformance(x) → EasyIntegration(x))
+---
+NL: Translate the following natural language statement into First-Order Logic (FOL).
+
+Statement: If a student not completing fundamental courses implies they are not eligible for graduation, then being enrolled in the honors program implies having access to advanced materials.
+Gold: ∀x (¬C(x) → ¬G(x)) → ∀x (H(x) → A(x))
+Gen:  ∀x ((¬CompletesFundamentalCourses(x) → ¬EligibleForGraduation(x)) → (EnrolledHonorsProgram(x) → HasAccessAdvancedMaterials(x)))
+---

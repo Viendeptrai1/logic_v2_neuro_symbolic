@@ -167,6 +167,7 @@ class _Parser:
         return t[0] if t else None
 
     def consume(self, kind: str | None = None) -> tuple[str, str]:
+        if self.pos >= len(self.tokens): raise ParseError("Unexpected end of input")
         t = self.tokens[self.pos]
         if kind and t[0] != kind:
             raise ParseError(

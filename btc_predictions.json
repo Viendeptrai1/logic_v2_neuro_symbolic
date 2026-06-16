@@ -1,0 +1,612 @@
+[
+  {
+    "query_id": "T1_0031",
+    "predicted_answer": "B",
+    "full_output": {
+      "answer": "B",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], the goal IsSearchable(River_Codex) ^ \u00acIsSafeForPublicRelease(River_Codex) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x (IsScanned(x) \u2227 IsMetadataComplete(x) \u2192 IsPreservationReady(x))",
+          "Premise 1: \u2200x (IsPreservationReady(x) \u2227 IsRightsCleared(x) \u2192 IsEligiblePortal(x))",
+          "Premise 2: \u2200x (IsEligiblePortal(x) \u2227 IsOCRVerified(x) \u2192 IsSearchable(x))",
+          "Premise 3: \u2200x (ContainsPersonalData(x) \u2192 RequiresPrivacyReview(x))",
+          "Premise 4: \u2200x (RequiresPrivacyReview(x) \u2227 IsRedacted(x) \u2192 IsSafeForPublicRelease(x))",
+          "Premise 5: IsScanned(River_Codex)",
+          "Premise 6: IsMetadataComplete(River_Codex)",
+          "Premise 7: IsRightsCleared(River_Codex)",
+          "Premise 8: IsOCRVerified(River_Codex)",
+          "Premise 9: ContainsPersonalData(River_Codex)",
+          "Therefore: IsSearchable(River_Codex) ^ \u00acIsSafeForPublicRelease(River_Codex)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0027",
+    "predicted_answer": "D",
+    "full_output": {
+      "answer": "D",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], the goal EnterAntiviralProtocol(Mira) ^ RequiresReview(Mira) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((HasFever(x) \u2227 LowOxygenSaturation(x)) \u2192 IsolationRespiratory(x))",
+          "Premise 1: \u2200x ((IsolationRespiratory(x) \u2227 PositiveRapidTest(x)) \u2192 EnterAntiviralProtocol(x))",
+          "Premise 2: \u2200x ((EnterAntiviralProtocol(x) \u2227 CompletedRenalScreen(x)) \u2192 ReceivesStandardDose(x))",
+          "Premise 3: \u2200x (RequiresDoseAdjustment(x) \u2192 \u00acReceivesStandardDose(x))",
+          "Premise 4: \u2200x (\u00acReceivesStandardDose(x) \u2192 NeedsReview(x))",
+          "Premise 5: HasFever(Mira)",
+          "Premise 6: LowOxygenSaturation(Mira)",
+          "Premise 7: PositiveRapidTest(Mira)",
+          "Premise 8: RenalImpairment(Mira)",
+          "Therefore: EnterAntiviralProtocol(Mira) \u2227 RequiresReview(Mira)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0039",
+    "predicted_answer": "C",
+    "full_output": {
+      "answer": "C",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], the goal CanBeAdministered(BatchNova) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((StayedBetween2And8(x) \u2227 IntactSeal(x)) \u2192 Viable(x))",
+          "Premise 1: \u2200x (Viable(x) \u2227 CompleteLog(x) \u2192 AllowedDistribution(x))",
+          "Premise 2: \u2200x (AllowedDistribution(x) \u2227 CertifiedRecipient(x) \u2192 CanBeAdministered(x))",
+          "Premise 3: \u2200x (RecordedExcursion(x) \u2192 QuarantineRequired(x))",
+          "Premise 4: \u2200x (\u00acRecordedExcursion(x) \u2227 IntactSeal(x) \u2192 \u00acQuarantineRequired(x))",
+          "Premise 5: StayedBetween2And8(BatchNova)",
+          "Premise 6: IntactSeal(BatchNova)",
+          "Premise 7: CompleteLog(BatchNova)",
+          "Premise 8: CertifiedRecipient(BatchNova)",
+          "Premise 9: \u00acRecordedExcursion(BatchNova)",
+          "Therefore: CanBeAdministered(BatchNova)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0023",
+    "predicted_answer": "A",
+    "full_output": {
+      "answer": "A",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5, 6, 7, 8], the goal IsAuditReady(Atlas) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((IsPatched(x) \u2227 ReviewedLogs(x)) \u2192 IsContainedIncident(x))",
+          "Premise 1: \u2200x (isContainedIncident(x) \u2192 (AllPasswordsReset(x) \u2192 IsAccountSecured(x)))",
+          "Premise 2: \u2200x (IsAccountSecured(x) \u2192 (ForensicReportSubmitted(x) \u2192 IsCaseAuditReady(x)))",
+          "Premise 3: \u2200x (IsCaseAuditReady(x) \u2192 (ManagerSignsOff(x) \u2192 CaseFormallyClosed(x)))",
+          "Premise 4: IsPatched(Atlas)",
+          "Premise 5: ReviewedLogs(Atlas)",
+          "Premise 6: AllPasswordsReset(Atlas)",
+          "Premise 7: ForensicReportSubmitted(Atlas)",
+          "Therefore: IsAuditReady(Atlas)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0033",
+    "predicted_answer": "B",
+    "full_output": {
+      "answer": "B",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5, 6, 7, 8], the goal IsApproved(AzureReef) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((ShowsBleaching(x) \u2227 HasAnomaly(x)) \u2192 StressAlert(x))",
+          "Premise 1: \u2200x (StressAlert(x) \u2192 (CoralCoverBelowThirtyPercent(x) \u2192 IsPriority(x)))",
+          "Premise 2: \u2200x (IsPriority(x) \u2192 (HighFishingPressure(x) \u2192 RecommendNoTakeZone(x)))",
+          "Premise 3: \u2200x (RecommendNoTakeZone(x) \u2192 (CommunityConsultationComplete(x) \u2192 IsApproved(x)))",
+          "Premise 4: ShowsBleaching(AzureReef)",
+          "Premise 5: HasAnomaly(AzureReef)",
+          "Premise 6: CoralCoverBelowThirtyPercent(AzureReef)",
+          "Premise 7: HighFishingPressure(AzureReef)",
+          "Premise 8: CommunityConsultationComplete(AzureReef)",
+          "Therefore: IsApproved(AzureReef)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0046",
+    "predicted_answer": "A",
+    "full_output": {
+      "answer": "A",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5], the goal ReceiveBlueBadge(MorningShift) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((HasFirstAid(x) \u2227 CompletedPrivacyTraining(x)) \u2192 CanAssistTriage(x))",
+          "Premise 1: \u2200x ((CanAssistTriage(x) \u2227 HasMorningAvailability(x)) \u2192 AssignedToMorningShift(x))",
+          "Premise 2: \u2200x (AssignedToMorningShift(x) \u2192 ReceiveBlueBadge(x))",
+          "Premise 3: FirstAid(Linh)",
+          "Premise 4: CompletedPrivacyTraining(Linh)",
+          "Premise 5: HasMorningAvailability(Linh)",
+          "Therefore: ReceiveBlueBadge(MorningShift)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0013",
+    "predicted_answer": "D",
+    "full_output": {
+      "answer": "D",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4], the goal IsEligibleOpenScience(ManuscriptNova) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x (ReportsPreregistered(x) \u2192 ImprovesTransparency(x))",
+          "Premise 1: \u2200x ((ImprovesTransparency(x) \u2227 ReleasesCode(x)) \u2192 PassesReproducibilityChecklist(x))",
+          "Premise 2: \u2200x (PassesReproducibilityChecklist(x) \u2192 IsEligibleOpenScience(x))",
+          "Premise 3: ReportsPreregistered(ManuscriptNova)",
+          "Premise 4: ReleasesCode(ManuscriptNova)",
+          "Therefore: IsEligibleOpenScience(ManuscriptNova)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0022",
+    "predicted_answer": "Yes",
+    "full_output": {
+      "answer": "Yes",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], the goal IsEligibleForExhibition(AmberAmulet) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((HasHumidityControlLog(x) \u2227 \u00acHasPestDamageReport(x)) \u2192 IsStorageReady(x))",
+          "Premise 1: \u2200x (IsStorageReady(x) \u2227 HasProvenanceCertificate(x) \u2192 IsEligibleForExhibition(x))",
+          "Premise 2: \u2200x (IsEligibleForExhibition(x) \u2227 HasCuratorApproval(x) \u2192 CanBeDisplayed(x))",
+          "Premise 3: \u2200x (IsFragile(x) \u2192 RequiresLowLightProtection(x))",
+          "Premise 4: \u2200x (RequiresLowLightProtection(x) \u2227 CanBeDisplayed(x) \u2192 MustBeDisplayedInClimateControlledCase(x))",
+          "Premise 5: HasHumidityControlLog(AmberAmulet)",
+          "Premise 6: \u00acHasPestDamageReport(AmberAmulet)",
+          "Premise 7: HasProvenanceCertificate(AmberAmulet)",
+          "Premise 8: HasCuratorApproval(AmberAmulet)",
+          "Premise 9: IsFragile(AmberAmulet)",
+          "Therefore: IsEligibleForExhibition(AmberAmulet)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0034",
+    "predicted_answer": "Yes",
+    "full_output": {
+      "answer": "Yes",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3], the goal RecommendNoTakeZone(AzureReef) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((ShowsBleaching(x) \u2227 HasTempAnomaly(x)) \u2192 StressAlert(x))",
+          "Premise 1: \u2200x (HasStressAlert(x) \u2227 CoralCoverBelowThirtyPercent(x) \u2192 RestorationPriority(x))",
+          "Premise 2: \u2200x (IsRestorationPriority(x) \u2227 HighFishingPressure(x) \u2192 RecommendNoTakeZone(x))",
+          "Therefore: RecommendNoTakeZone(AzureReef)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0042",
+    "predicted_answer": "Yes",
+    "full_output": {
+      "answer": "Yes",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 4, 5], the goal IsContributor(Asha) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((CompletedTraining(x) \u2227 HasLabAccess(x)) \u2192 CanHandleData(x))",
+          "Premise 1: \u2200x ((CanHandleData(x) \u2227 HasSupervisorApproval(x)) \u2192 MayJoinStudyAlpha(x))",
+          "Premise 2: \u2200x (MayJoinStudyAlpha(x) \u2192 IsContributor(x))",
+          "Premise 3: CompletedTraining(Asha)",
+          "Premise 4: HasLabAccess(Asha)",
+          "Therefore: IsContributor(Asha)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0008",
+    "predicted_answer": "Yes",
+    "full_output": {
+      "answer": "Yes",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 1, 2, 3, 5, 6, 7], the goal CanProvideEmergencyResponseData(SatelliteVega) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x (HasCalibratedThermalSensors(x) \u2192 CanMonitorSurfaceTemperature(x))",
+          "Premise 1: \u2200x (CanMonitorSurfaceTemperature(x) \u2227 HasCloudPenetratingRadar(x) \u2192 CanSupportDisasterMapping(x))",
+          "Premise 2: \u2200x (CanSupportDisasterMapping(x) \u2192 CanProvideEmergencyResponseData(x))",
+          "Premise 3: HasCalibratedThermalSensors(SatelliteVega)",
+          "Premise 5: \u00acHasCloudPenetratingRadar(SatelliteVega)",
+          "Premise 6: HasHighResolutionOpticalCamera(SatelliteVega)",
+          "Premise 7: \u2200x (HasHighResolutionOpticalCamera(x) \u2192 CanCaptureDaytimeImages(x))",
+          "Therefore: CanProvideEmergencyResponseData(SatelliteVega)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0032",
+    "predicted_answer": "Yes",
+    "full_output": {
+      "answer": "Yes",
+      "unit": "",
+      "explanation": "By a multi-step chain of Modus Ponens, applying premises [0, 3, 4, 9], the goal IsSafeForPublicRelease(RiverCodex) is entailed.",
+      "premises_used": [
+        0,
+        3,
+        4,
+        9
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((IsScanned600(x) \u2227 IsMetadataComplete(x)) \u2192 IsPreservationReady(x))",
+          "Premise 3: \u2200x (ContainsPersonalData(x) \u2192 RequiresPrivacyReview(x))",
+          "Premise 4: \u2200x (RequiresPrivacyReview(x) \u2227 IsRedacted(x) \u2192 IsSafeForPublicRelease(x))",
+          "Premise 9: ContainsPersonalData(RiverCodex)",
+          "Therefore: IsSafeForPublicRelease(RiverCodex)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T1_0048",
+    "predicted_answer": "No",
+    "full_output": {
+      "answer": "No",
+      "unit": "",
+      "explanation": "By Disjunctive Syllogism, applying premises [0, 1, 2, 3, 4, 5], the goal HasPharmacyTraining(Linh) is entailed.",
+      "premises_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reasoning": {
+        "type": "fol",
+        "steps": [
+          "Premise 0: \u2200x ((HasFirstAidCertification(x) \u2227 CompletedPrivacyTraining(x)) \u2192 MayAssistTriage(x))",
+          "Premise 1: \u2200x ((MayAssistTriage(x) \u2227 MorningAvailability(x)) \u2192 AssignedMorningShift(x))",
+          "Premise 2: \u2200x (AssignedMorningShift(x) \u2192 ReceivesBlueBadge(x))",
+          "Premise 3: HasFirstAidCertification(Linh)",
+          "Premise 4: CompletedPrivacyTraining(Linh)",
+          "Premise 5: MorningAvailability(Linh)",
+          "Therefore: HasPharmacyTraining(Linh)"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0002",
+    "predicted_answer": "0.15",
+    "full_output": {
+      "answer": "0.15",
+      "unit": "F",
+      "explanation": "By definition, the capacitance C of a capacitor is given by the formula C = Q / U. Substituting the given values, we get C = 2.4 mC / 16 V = 0.15 F.",
+      "premises_used": [],
+      "reasoning": {
+        "type": "DirectCalculation",
+        "steps": [
+          "The capacitance C of a capacitor is defined as C = Q / U.",
+          "Substituting the given values, C = 2.4 mC / 16 V.",
+          "Therefore, C = 0.15 F."
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0004",
+    "predicted_answer": "ERROR",
+    "full_output": "{\"answer\": \"3600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "query_id": "T2_0005",
+    "predicted_answer": "-3.6",
+    "full_output": {
+      "answer": "-3.6",
+      "unit": "kV",
+      "explanation": "By point charge potential, the total electric potential V at point P is the sum of the potentials due to each individual charge. The potential due to q1 is V1 = (k * |q1|) / r1 = (9.0e+09 * 6.0e-09) / 0.1 = 54000 V. The potential due to q2 is V2 = (k * |q2|) / r2 = (9.0e+09 * 2.0e-09) / 0.2 = 9000 V. Therefore, the total potential V = V1 + V2 = 54000 + 9000 = 63000 V. Converting to kilovolts, V = 63000 V / 1000 = 63 kV.",
+      "premises_used": [],
+      "reasoning": {
+        "type": "Direct Application",
+        "steps": [
+          "Apply point charge potential formula V = (k * |q|) / r for each charge.",
+          "Calculate V1 for q1 = +6.0 nC at r1 = 10 cm.",
+          "Calculate V2 for q2 = -2.0 nC at r2 = 20 cm.",
+          "Sum V1 and V2 to get the total potential V.",
+          "Convert the final potential from volts to kilovolts."
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0007",
+    "predicted_answer": "720.0 J",
+    "full_output": {
+      "answer": "720.0 J",
+      "unit": "J",
+      "explanation": "By Ohm's Law, the current I is 0.5 A. The power P is 6 W. By the work-energy theorem, the energy E is 720.0 J.",
+      "premises_used": [
+        0,
+        1
+      ],
+      "reasoning": {
+        "type": "Direct Application",
+        "steps": [
+          "By Ohm's Law, I = U / R = 12 V / 24 \u03a9 = 0.5 A",
+          "The power P is given by P = I * U = 0.5 A * 12 V = 6 W",
+          "By the work-energy theorem, the energy E is given by E = P * t = 6 W * 5 * 60 s = 720.0 J"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0009",
+    "predicted_answer": "4.5",
+    "full_output": {
+      "answer": "4.5",
+      "unit": "A",
+      "explanation": "By applying Kirchhoff's Current Law at the node between the two resistors, the equation I_total = I_R1 + I_R2 is derived. Using Ohm's Law, I_R1 = V / R1 and I_R2 = V / R2, where V = 12 V, R1 = 6 \u03a9, and R2 = 3 \u03a9, the total current I_total is calculated to be 4.5 A.",
+      "premises_used": [
+        0
+      ],
+      "reasoning": {
+        "type": "Direct Application",
+        "steps": [
+          "Apply Kirchhoff's Current Law: I_total = I_R1 + I_R2",
+          "Substitute Ohm's Law: I_R1 = V / R1, I_R2 = V / R2",
+          "Calculate I_total: (V / R1) + (V / R2) = (12 V / 6 \u03a9) + (12 V / 3 \u03a9) = 4.5 A"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0013",
+    "predicted_answer": "50.0",
+    "full_output": {
+      "answer": "50.0",
+      "unit": "meters",
+      "explanation": "By the equations of motion, final velocity squared equals initial velocity squared plus two times acceleration times displacement. Plugging the numbers given in the problem results in 0 = (20 m/s)\u00b2 + 2 * (-4.0 m/s\u00b2) * d. Solving for displacement gives a braking distance of 50.0 meters.",
+      "premises_used": [],
+      "reasoning": {
+        "type": "Direct Calculation",
+        "steps": [
+          "Apply the equation v_f\u00b2 = v_i\u00b2 + 2ad",
+          "Substitute values: 0 = (20 m/s)\u00b2 + 2 * (-4.0 m/s\u00b2) * d",
+          "Solve for d: d = 50.0 meters"
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0015",
+    "predicted_answer": "4.47 m/s",
+    "full_output": {
+      "answer": "4.47 m/s",
+      "unit": "meters per second",
+      "explanation": "By Work-Energy Theorem, the work done by the net force equals the change in kinetic energy of the object. Therefore, (1/2)*(2.0 kg)*v_f^2 - (1/2)*(2.0 kg)*0^2 = (10 N)*(5.0 m). Thus, v_f = 4.47 m/s.",
+      "premises_used": [
+        0
+      ],
+      "reasoning": {
+        "type": "ChainOfThought",
+        "steps": [
+          "By Work-Energy Theorem, the work done by the net force equals the change in kinetic energy of the object.",
+          "(1/2)*(2.0 kg)*v_f^2 - (1/2)*(2.0 kg)*0^2 = (10 N)*(5.0 m)",
+          "Therefore, v_f = 4.47 m/s."
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0017",
+    "predicted_answer": "31500.0 J",
+    "full_output": {
+      "answer": "31500.0 J",
+      "unit": "Joule",
+      "explanation": "By the formula Q = m * c * \u0394T, where Q is the heat energy, m is the mass, c is the specific heat capacity, and \u0394T is the change in temperature, we can calculate the heat required. Substituting the given values m = 0.50 kg, c = 4200 J/(kg\u00b7\u00b0C), and \u0394T = 15 \u00b0C into the formula, we get Q = 0.50 * 4200 * 15 = 31500.0 Joule.",
+      "premises_used": [],
+      "reasoning": {
+        "type": "FunctionApplication",
+        "steps": [
+          "The heat energy Q is calculated using the formula Q = m * c * \u0394T.",
+          "Substitute m = 0.50 kg, c = 4200 J/(kg\u00b7\u00b0C), and \u0394T = 15 \u00b0C into the formula.",
+          "Therefore, Q = 0.50 * 4200 * 15 = 31500.0 Joule."
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0028",
+    "predicted_answer": "3.0 W",
+    "full_output": {
+      "answer": "3.0 W",
+      "unit": "W",
+      "explanation": "By Ohm's Law, the resistance R of the lamp is U / I = 12 V / 0.25 A = 48 ohms. The power P dissipated by the lamp is given by P = I^2 * R = (0.25 A)^2 * 48 ohms = 3.0 W.",
+      "premises_used": [],
+      "reasoning": {
+        "type": "Direct Calculation",
+        "steps": [
+          "Identify the given values: voltage U = 12 V and current I = 0.25 A.",
+          "Calculate the resistance R using Ohm's Law: R = U / I = 12 V / 0.25 A = 48 ohms.",
+          "Use the formula for power P = I^2 * R to find the power dissipated by the lamp.",
+          "Substitute the known values into the formula: P = (0.25 A)^2 * 48 ohms = 3.0 W.",
+          "Therefore, the power of the lamp is 3.0 W."
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0029",
+    "predicted_answer": "-15.0",
+    "full_output": {
+      "answer": "-15.0",
+      "unit": "J",
+      "explanation": "By Work-Voltage Relationship for Electric Charges, the work W done by a charge q moving through a potential difference U is given by the formula W = -qU. Substituting the given values q = 3 and U = 5 into the formula, we get W = -(3)(5) = -15. Therefore, the work done is -15.0 J.",
+      "premises_used": [
+        0
+      ],
+      "reasoning": {
+        "type": "Direct Application",
+        "steps": [
+          "The work W done by a charge q moving through a potential difference U is given by the formula W = -qU.",
+          "Substitute q = 3 and U = 5 into the formula W = -qU.",
+          "Therefore, W = -(3)(5) = -15.",
+          "Thus, the work done is -15.0 J."
+        ]
+      }
+    }
+  },
+  {
+    "query_id": "T2_0049",
+    "predicted_answer": "48.0",
+    "full_output": {
+      "answer": "48.0",
+      "unit": "V",
+      "explanation": "By Ideal Transformer Law, the ratio of the secondary voltage to the primary voltage is equal to the ratio of the secondary turns to the primary turns. Therefore, U2 / U1 = N2 / N1. By transposition, U2 = (U1 * N2) / N1. Substituting the given values, U2 = (12 V * 800) / 200 = 48.0 V.",
+      "premises_used": [
+        0
+      ],
+      "reasoning": {
+        "type": "Direct Application",
+        "steps": [
+          "By Ideal Transformer Law, U2 / U1 = N2 / N1",
+          "Therefore, U2 = (U1 * N2) / N1",
+          "Substituting U1 = 12 V, N2 = 800, N1 = 200, U2 = (12 V * 800) / 200 = 48.0 V."
+        ]
+      }
+    }
+  }
+]
