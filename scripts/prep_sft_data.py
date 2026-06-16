@@ -80,6 +80,26 @@ RULES: Use EXACT abbreviated predicate names. Output ONLY the FOL string. Use: â
                         ]
                     })
                     
+    # 3. Add Augmented Goals
+    with open('data/silver_goals_all_meta.json') as f:
+        aug_goals = json.load(f)
+        
+    for ag in aug_goals:
+        mock_item = {
+            'premises-NL': ag['premises_nl'],
+            'premises-FOL': ag['premises_fol']
+        }
+        q_text = ag['question']
+        goal_fol = ag['gold_fol']
+        
+        sft_data.append({
+            "messages": [
+                {"role": "system", "content": SYSTEM_GOAL},
+                {"role": "user", "content": build_goal_prompt(mock_item, q_text)},
+                {"role": "assistant", "content": goal_fol}
+            ]
+        })
+                    
     print(f"Generated {len(sft_data)} SFT samples.")
     out_path = "data/qwen_logic_sft.jsonl"
     with open(out_path, 'w', encoding='utf-8') as f:

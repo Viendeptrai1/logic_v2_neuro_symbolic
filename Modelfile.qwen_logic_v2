@@ -1,0 +1,2 @@
+FROM qwen2.5-coder:7b
+ADAPTER ./models/qwen_logic_v2_lora.gguf

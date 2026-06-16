@@ -1,0 +1,353 @@
+[
+  {
+    "query_id": "T1_0031",
+    "type": "type1",
+    "query": "Based on the digitization rules, which conclusion is correct?\nA. The River Codex is not eligible for the public portal\nB. The River Codex is searchable online, but safe public release is not established\nC. The River Codex lacks OCR verification\nD. The River Codex is safe for public release because it contains personal data",
+    "premises": [
+      "If a manuscript is scanned at 600 dpi and its metadata is complete, then it is preservation-ready.",
+      "If a manuscript is preservation-ready and its rights are cleared, then it is eligible for the public portal.",
+      "If a manuscript is eligible for the public portal and OCR has been verified, then it is searchable online.",
+      "If a manuscript contains personal data, then privacy review is required.",
+      "If privacy review is required and redaction is complete, then the manuscript is safe for public release.",
+      "The River Codex was scanned at 600 dpi.",
+      "The River Codex metadata is complete.",
+      "The River Codex rights are cleared.",
+      "The River Codex OCR has been verified.",
+      "The River Codex contains personal data."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0027",
+    "type": "type1",
+    "query": "Based on the triage rules, which conclusion is correct?\nA. Mira can be discharged because the rapid test is positive\nB. Mira can receive the standard antiviral dose immediately\nC. Mira does not need respiratory isolation\nD. Mira enters the antiviral protocol and requires dose review",
+    "premises": [
+      "If a patient has a fever and low oxygen saturation, then the patient is placed in respiratory isolation.",
+      "If a patient is in respiratory isolation and has a positive rapid test, then the patient enters the antiviral protocol.",
+      "If a patient enters the antiviral protocol and has a completed renal screen, then the patient receives the standard antiviral dose.",
+      "If a patient has renal impairment, then the patient requires dose adjustment.",
+      "If a patient requires dose adjustment, then the patient should not receive the standard antiviral dose without review.",
+      "Mira has a fever.",
+      "Mira has low oxygen saturation.",
+      "Mira has a positive rapid test.",
+      "Mira has renal impairment."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0039",
+    "type": "type1",
+    "query": "Based on the cold-chain rules, which conclusion is logically supported?\nA. Batch Nova is not viable\nB. Batch Nova must be quarantined\nC. Batch Nova can be administered\nD. Batch Nova lacks a complete temperature log",
+    "premises": [
+      "If a vaccine batch stayed between 2 and 8 degrees Celsius and its seal is intact, then the batch is viable.",
+      "If a vaccine batch is viable and its temperature log is complete, then clinic distribution is allowed.",
+      "If clinic distribution is allowed and the recipient clinic is certified, then the batch can be administered.",
+      "If a temperature excursion is recorded, then quarantine is required.",
+      "If no temperature excursion is recorded and the seal is intact, then quarantine is not required.",
+      "Batch Nova stayed between 2 and 8 degrees Celsius.",
+      "Batch Nova has an intact seal.",
+      "Batch Nova has a complete temperature log.",
+      "The recipient clinic for Batch Nova is certified.",
+      "No temperature excursion is recorded for Batch Nova."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0023",
+    "type": "type1",
+    "query": "Based on the cybersecurity workflow, which statement is correct?\nA. The Atlas case is audit-ready, but formal closure is not established by the premises\nB. The Atlas case is formally closed\nC. The Atlas incident is not contained\nD. The Atlas account still needs password resets",
+    "premises": [
+      "If a server is patched and its logs have been reviewed, then the incident is contained.",
+      "If an incident is contained and all affected passwords have been reset, then the affected account is secured.",
+      "If an affected account is secured and the forensic report has been submitted, then the case is audit-ready.",
+      "If a case is audit-ready and a manager signs off, then the case can be formally closed.",
+      "The Atlas server is patched.",
+      "The Atlas server logs have been reviewed.",
+      "All affected Atlas passwords have been reset.",
+      "The Atlas forensic report has been submitted."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0033",
+    "type": "type1",
+    "query": "Based on the reef management rules, which conclusion follows?\nA. Azure Reef has no restoration priority\nB. Azure Reef's conservation plan is approved\nC. A temporary no-take zone is recommended for Azure Reef\nD. Azure Reef has no stress alert",
+    "premises": [
+      "If a reef shows bleaching signs and has a temperature anomaly, then a stress alert is issued.",
+      "If a reef has a stress alert and coral cover is below 30 percent, then it becomes a restoration priority.",
+      "If a reef is a restoration priority and local fishing pressure is high, then a temporary no-take zone is recommended.",
+      "If a temporary no-take zone is recommended and community consultation is complete, then the conservation plan is approved.",
+      "Azure Reef shows bleaching signs.",
+      "Azure Reef has a temperature anomaly.",
+      "Azure Reef has coral cover below 30 percent.",
+      "Azure Reef has high local fishing pressure."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0046",
+    "type": "type1",
+    "query": "Which conclusion is supported by the clinic roster premises?\nA. Linh receives a blue access badge\nB. Linh has pharmacy training\nC. The morning triage shift needs 5 volunteers\nD. Linh cannot assist at the triage desk",
+    "premises": [
+      "If a clinic volunteer has first-aid certification and completed patient privacy training, then the volunteer may assist at the triage desk.",
+      "If a volunteer may assist at the triage desk and has morning availability, then the volunteer is assigned to the morning triage shift.",
+      "Every volunteer assigned to the morning triage shift receives a blue access badge.",
+      "Linh has first-aid certification.",
+      "Linh completed patient privacy training.",
+      "Linh has morning availability.",
+      "The morning triage shift needs 3 volunteers.",
+      "No premise states that Linh has pharmacy training."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0013",
+    "type": "type1",
+    "query": "Which conclusion follows from the premises?\nA. Manuscript Nova fails the reproducibility checklist\nB. Manuscript Nova cannot be peer reviewed\nC. Manuscript Nova lacks methodological transparency\nD. Manuscript Nova is eligible for open science recognition",
+    "premises": [
+      "If a manuscript reports a preregistered hypothesis, then it improves methodological transparency.",
+      "If a manuscript improves methodological transparency and releases its analysis code, then it passes the reproducibility checklist.",
+      "If a manuscript passes the reproducibility checklist, then it is eligible for open science recognition.",
+      "Manuscript Nova reports a preregistered hypothesis.",
+      "Manuscript Nova releases its analysis code.",
+      "Manuscript Nova does not include a graphical abstract.",
+      "Manuscripts without graphical abstracts can still be peer reviewed."
+    ],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "query_id": "T1_0022",
+    "type": "type1",
+    "query": "Does the Amber Amulet qualify for public display, according to the premises?",
+    "premises": [
+      "If an artifact has a humidity-control log and no pest-damage report, then it is storage-ready.",
+      "If an artifact is storage-ready and has a provenance certificate, then it is eligible for exhibition.",
+      "If an artifact is eligible for exhibition and has curator approval, then it can be placed on public display.",
+      "If an artifact is fragile, then it requires low-light protection.",
+      "If an artifact requires low-light protection and can be placed on public display, then it must be displayed in a climate-controlled case.",
+      "The Amber Amulet has a humidity-control log.",
+      "The Amber Amulet has no pest-damage report.",
+      "The Amber Amulet has a provenance certificate.",
+      "The Amber Amulet has curator approval.",
+      "The Amber Amulet is fragile."
+    ],
+    "options": [
+      "Yes",
+      "No",
+      "Uncertain"
+    ]
+  },
+  {
+    "query_id": "T1_0034",
+    "type": "type1",
+    "query": "Is a temporary no-take zone recommended for Azure Reef, according to the premises?",
+    "premises": [
+      "If a reef shows bleaching signs and has a temperature anomaly, then a stress alert is issued.",
+      "If a reef has a stress alert and coral cover is below 30 percent, then it becomes a restoration priority.",
+      "If a reef is a restoration priority and local fishing pressure is high, then a temporary no-take zone is recommended.",
+      "If a temporary no-take zone is recommended and community consultation is complete, then the conservation plan is approved.",
+      "Azure Reef shows bleaching signs.",
+      "Azure Reef has a temperature anomaly.",
+      "Azure Reef has coral cover below 30 percent.",
+      "Azure Reef has high local fishing pressure."
+    ],
+    "options": [
+      "Yes",
+      "No",
+      "Uncertain"
+    ]
+  },
+  {
+    "query_id": "T1_0042",
+    "type": "type1",
+    "query": "Is Asha listed as an active contributor?",
+    "premises": [
+      "If a researcher completed ethics training and has lab access, then that researcher can handle participant data.",
+      "If a researcher can handle participant data and has supervisor approval, then that researcher may join Study Alpha.",
+      "Every researcher who may join Study Alpha is listed as an active contributor.",
+      "Asha completed ethics training.",
+      "Asha has lab access.",
+      "Asha has supervisor approval.",
+      "Study Alpha has 12 enrolled participants.",
+      "No premise states whether Asha has budget approval."
+    ],
+    "options": [
+      "Yes",
+      "No",
+      "Uncertain"
+    ]
+  },
+  {
+    "query_id": "T1_0008",
+    "type": "type1",
+    "query": "Does having thermal sensors and an optical camera guarantee emergency response data in this case?",
+    "premises": [
+      "If a satellite has calibrated thermal sensors, then it can monitor surface temperature.",
+      "If a satellite can monitor surface temperature and has cloud-penetrating radar, then it can support disaster mapping.",
+      "If a satellite supports disaster mapping, then it can provide emergency response data.",
+      "Satellite Vega has calibrated thermal sensors.",
+      "Satellite Vega does not have cloud-penetrating radar.",
+      "Satellite Vega has a high-resolution optical camera.",
+      "All satellites with high-resolution optical cameras can capture daytime images."
+    ],
+    "options": [
+      "Yes",
+      "No",
+      "Uncertain"
+    ]
+  },
+  {
+    "query_id": "T1_0032",
+    "type": "type1",
+    "query": "Do the premises establish that the River Codex is safe for public release?",
+    "premises": [
+      "If a manuscript is scanned at 600 dpi and its metadata is complete, then it is preservation-ready.",
+      "If a manuscript is preservation-ready and its rights are cleared, then it is eligible for the public portal.",
+      "If a manuscript is eligible for the public portal and OCR has been verified, then it is searchable online.",
+      "If a manuscript contains personal data, then privacy review is required.",
+      "If privacy review is required and redaction is complete, then the manuscript is safe for public release.",
+      "The River Codex was scanned at 600 dpi.",
+      "The River Codex metadata is complete.",
+      "The River Codex rights are cleared.",
+      "The River Codex OCR has been verified.",
+      "The River Codex contains personal data."
+    ],
+    "options": [
+      "Yes",
+      "No",
+      "Uncertain"
+    ]
+  },
+  {
+    "query_id": "T1_0048",
+    "type": "type1",
+    "query": "Does Linh have pharmacy training?",
+    "premises": [
+      "If a clinic volunteer has first-aid certification and completed patient privacy training, then the volunteer may assist at the triage desk.",
+      "If a volunteer may assist at the triage desk and has morning availability, then the volunteer is assigned to the morning triage shift.",
+      "Every volunteer assigned to the morning triage shift receives a blue access badge.",
+      "Linh has first-aid certification.",
+      "Linh completed patient privacy training.",
+      "Linh has morning availability.",
+      "The morning triage shift needs 3 volunteers.",
+      "No premise states that Linh has pharmacy training."
+    ],
+    "options": [
+      "Yes",
+      "No",
+      "Uncertain"
+    ]
+  },
+  {
+    "query_id": "T2_0002",
+    "type": "type2",
+    "query": "A capacitor stores a charge Q = 2.4 mC when connected to a voltage U = 16 V. Calculate the capacitance of the capacitor.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0004",
+    "type": "type2",
+    "query": "Two charges +4.0 nC and -4.0 nC are fixed 20 cm apart in air. Calculate the magnitude of the electric field at the midpoint between the charges. Use k = 9.0 × 10^9 N·m²/C².",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0005",
+    "type": "type2",
+    "query": "A point P is 10 cm from a charge q1 = +6.0 nC and 20 cm from a charge q2 = -2.0 nC. Calculate the electric potential at P. Use k = 9.0 × 10^9 N·m²/C².",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0007",
+    "type": "type2",
+    "query": "A 24 Ω resistor is connected to a 12 V battery for 5 minutes. Calculate the electrical energy converted in the resistor.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0009",
+    "type": "type2",
+    "query": "Two resistors R1 = 6 Ω and R2 = 3 Ω are connected in parallel across a 12 V source. Calculate the total current drawn from the source.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0013",
+    "type": "type2",
+    "query": "A car moving at 20 m/s brakes uniformly to rest with acceleration -4.0 m/s². Calculate the braking distance.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0015",
+    "type": "type2",
+    "query": "A 2.0 kg object starts from rest. A constant net force of 10 N acts on it over a distance of 5.0 m. Calculate the final speed of the object.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0017",
+    "type": "type2",
+    "query": "How much heat is required to raise the temperature of 0.50 kg of water by 15 °C? Use c = 4200 J/(kg·°C).",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0028",
+    "type": "type2",
+    "query": "A lamp carries current I = 0.25 A under voltage U = 12 V. Calculate its power.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0029",
+    "type": "type2",
+    "query": "A charge q = 3 uC moves through a potential difference U = 5 V. Calculate the work done.",
+    "premises": [],
+    "options": []
+  },
+  {
+    "query_id": "T2_0049",
+    "type": "type2",
+    "query": "A transformer has primary turns N1 = 200, secondary turns N2 = 800, and primary voltage U1 = 12 V. Calculate the secondary voltage.",
+    "premises": [],
+    "options": []
+  }
+]

@@ -11,18 +11,11 @@ client = OpenAI(
     api_key="ollama"
 )
 
-# System Prompt for NL -> FOL Translation
 SYSTEM_PROMPT = """You are an expert in formal logic. Your task is to translate a given natural language statement into First-Order Logic (FOL).
 You will be provided with:
-1. A list of background premises in Natural Language (NL).
-2. Their corresponding First-Order Logic (FOL) translations. This acts as your lexicon/glossary for predicate names.
-3. A Target Statement in Natural Language that you must translate.
-
-RULES:
-- You MUST use the exact abbreviated predicate names found in the provided FOL premises.
-- Output ONLY the final FOL string. Do NOT output any markdown blocks, explanations, or quotes.
-- Use standard mathematical notation: ∀, ∃, →, ¬, ∧, ∨, ↔
-"""
+1. Background premises in NL and their FOL translations (serving as your lexicon).
+2. A Target Statement in NL to translate.
+RULES: Use EXACT abbreviated predicate names. Output ONLY the FOL string. Use: ∀, ∃, →, ¬, ∧, ∨"""
 
 def evaluate_baseline(model_name="qwen2.5-coder:7b"):
     with open('data/Logic_Based_Educational_Queries.json') as f:
@@ -44,7 +37,7 @@ def evaluate_baseline(model_name="qwen2.5-coder:7b"):
         for nl, fol in zip(prems_nl, prems_fol):
             prompt += f"- NL: {nl}\n  FOL: {fol}\n"
             
-        prompt += f"\nTarget Statement to Translate:\n{q_text}\n\nFOL Output:"
+        prompt += f"\nTarget Statement to Translate:\n{q_text}"
         
         try:
             response = client.chat.completions.create(
@@ -64,6 +57,9 @@ def evaluate_baseline(model_name="qwen2.5-coder:7b"):
             
             if gen_clean == gold_clean:
                 correct += 1
+            else:
+                print(f"\n[Mismatch] Target: {case.goal_fol}")
+                print(f"           Output: {gen_fol}\n")
             
             total += 1
             print(f"\rProgress: {total}/{len(ENCODED_CASES)} | Correct: {correct}", end="")
@@ -76,5 +72,5 @@ def evaluate_baseline(model_name="qwen2.5-coder:7b"):
     print(f"Accuracy: {correct}/{total} ({correct/total*100:.1f}%)")
 
 if __name__ == "__main__":
-    evaluate_baseline(model_name="qwen-logic:latest")
+    evaluate_baseline(model_name="qwen-logic-v2")
 
