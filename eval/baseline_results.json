@@ -1,0 +1,450 @@
+[
+  {
+    "item_idx": 0,
+    "q_idx": 1,
+    "gold_fol": "\u2200x (WS(x) \u2192 O(x))",
+    "gen_fol": "\u2200x (WS(x) \u2192 O(x)) \u2192 \u2200x (O(x) \u2192 CR(x)) \u2192 \u2200x (CR(x) \u2192 BP(x)) \u2192 \u2200x (BP(x) \u2192 EM(x)) \u2192 \u2200x (EM(x) \u2192 WT(x)) \u2192 \u2200x (WT(x) \u2192 PEP8(x)) \u2192 \u2200x (PEP8(x) \u2192 EM(x)) \u2192 \u2200x (O(x) \u2192 CR(x)) \u2192 \u2200x (CR(x) \u2192 BP(x)) \u2192 \u2200x (BP(x) \u2192 EM(x)) \u2192 \u2200x (EM(x) \u2192 WT(x)) \u2192 \u2200x (WT(x) \u2192 PEP8(x)) \u2192 \u2200x (PEP8(x) \u2192 EM(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (\u00acO(x) \u2192 \u00acWT(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (WT(x) \u2192 CR(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 1,
+    "q_idx": 1,
+    "gold_fol": "qualifies_for_scholarship(Sophia)",
+    "gen_fol": "qualifies_for_scholarship(Sophia)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 1,
+    "q_idx": 0,
+    "gold_fol": "eligible_for_international_program(Sophia)",
+    "gen_fol": "qualifies_for_scholarship(Sophia)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 1,
+    "q_idx": 0,
+    "gold_fol": "needs_faculty_recommendation(Sophia)",
+    "gen_fol": "qualifies_for_scholarship(Sophia)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 7,
+    "q_idx": 1,
+    "gold_fol": "research_mentor(dr_john)",
+    "gen_fol": "research_mentor(dr_john)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 7,
+    "q_idx": 0,
+    "gold_fol": "research_mentor(dr_john)",
+    "gen_fol": "teach_undergrad(dr_john) \u2227 teach_graduate(dr_john) \u2227 research_mentor(dr_john)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 11,
+    "q_idx": 1,
+    "gold_fol": "book_training(Alex)",
+    "gen_fol": "use_equipment(Alex) \u2227 has_trainer(Alex) \u2192 book_training(Alex)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 11,
+    "q_idx": 1,
+    "gold_fol": "use_equipment(Alex)",
+    "gen_fol": "use_equipment(Alex) \u2227 has_trainer(Alex) \u2192 book_training(Alex)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 15,
+    "q_idx": 1,
+    "gold_fol": "can_prescribe(john)",
+    "gen_fol": "can_prescribe(john)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 133,
+    "q_idx": 0,
+    "gold_fol": "PassTest",
+    "gen_fol": "Raining \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 133,
+    "q_idx": 0,
+    "gold_fol": "\u00acRaining",
+    "gen_fol": "Raining \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 133,
+    "q_idx": 0,
+    "gold_fol": "Raining",
+    "gen_fol": "Raining \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192 Sleep \u2192 \u00acStudy \u2192 FailTest \u2192 \u00acPassTest \u2192 \u00acFailTest \u2192 Raining \u2192",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 20,
+    "q_idx": 0,
+    "gold_fol": "ForAll(s, ForAll(m, (completes_assignment(s,m) \u2227 professor_approval(s,m) \u2227 completes_exam(s,m)) \u2192 can_pass(s,m)))",
+    "gen_fol": "\u2200s (\u2200m ((attendance(s,m) = 100 \u2227 \u00accompletes_exam(s,m)) \u2192 \u00acpass(s,m))) \u2192 \u2200s (scholarship(s) \u2192 \u2203m (grade(s,m) > 8.5)) \u2192 \u2200s (graduate(s) \u2192 \u2203m (required(m))) \u2192 \u2200s (\u2200m ((attendance(s,m) < 50 \u2227 completes_assignment(s,m) \u2227 professor_approval(s,m)) \u2192 allowed_exam(s,m))) \u2192 \u2200s (\u2200m (allowed_exam(s,m) \u2192 \u00acpass(s,m) \u2192 retake(s,m))) \u2192 \u2200s (\u2200m (completes_exam(s,m) \u2192 can_pass(s,m))) \u2192 \u2200s",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 20,
+    "q_idx": 1,
+    "gold_fol": "ForAll(s, (\u2203m1, \u2203m2, \u2203m3, grade(s,m1) > 8.5 \u2227 grade(s,m2) > 8.5 \u2227 grade(s,m3) > 8.5) \u2192 graduate(s))",
+    "gen_fol": "\u2200s (\u2200m1 (\u2200m2 (\u2200m3 (grade(s,m1) > 8.5 \u2227 grade(s,m2) > 8.5 \u2227 grade(s,m3) > 8.5 \u2192 graduate(s)))))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 27,
+    "q_idx": 0,
+    "gold_fol": "ForAll(s, (procrastination(s) \u2227 prioritizes_urgent(s) \u2227 high_stress(s)) \u2192 decreased_cognitive_performance(s))",
+    "gen_fol": "\u2200s (procrastination(s) \u2227 \u00acuses_active_recall(s) \u2227 \u00acsufficient_sleep(s)) \u2192 decreased_learning_efficiency(s)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 128,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, FinalProjectCompleted(x))",
+    "gen_fol": "\u2200x (MustMeetAcademicRequirements(x) \u2192 FinalProjectCompleted(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2203x (BP(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2203x (O(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (\u00acWS(x) \u2192 \u00acPEP8(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (WT(x) \u2192 CR(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (EM(x) \u2192 CR(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (WT(x) \u2192 FAST(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2203x (\u00acWT(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 5,
+    "q_idx": 1,
+    "gold_fol": "can_apply_collaborative_projects(John)",
+    "gen_fol": "can_apply_collaborative_projects(John)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 3,
+    "q_idx": 1,
+    "gold_fol": "academic_distinction(John)",
+    "gen_fol": "academic_distinction(John)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 0,
+    "q_idx": 0,
+    "gold_fol": "\u2200x (WS(x) \u2192 CR(x))",
+    "gen_fol": "\u2200x (\u00acO(x) \u2192 \u00acPEP8(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 40,
+    "q_idx": 0,
+    "gold_fol": "ForAll(x, Solve(x) \u2192 Practice(x))",
+    "gen_fol": "\u2200x(Practice(x) \u2192 AskQuestions(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 40,
+    "q_idx": 0,
+    "gold_fol": "Exists(x, AskQuestions(x) \u2227 \u00acAttend(x))",
+    "gen_fol": "\u2200x(Practice(x) \u2192 AskQuestions(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 60,
+    "q_idx": 0,
+    "gold_fol": "ForAll(x, ProvidesAccurateData(x))",
+    "gen_fol": "\u2200x (ProvidesAccurateData(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 60,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, EnergyEfficient(x))",
+    "gen_fol": "\u2200x (EnergyEfficient(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 4,
+    "q_idx": 0,
+    "gold_fol": "can_propose_courses(John)",
+    "gen_fol": "can_propose_courses(John)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 10,
+    "q_idx": 0,
+    "gold_fol": "eligible_internship(david)",
+    "gen_fol": "eligible_internship(david)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 14,
+    "q_idx": 0,
+    "gold_fol": "teach_undergrad(John)",
+    "gen_fol": "teach_undergrad(John)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 14,
+    "q_idx": 1,
+    "gold_fol": "teach_undergrad(John)",
+    "gen_fol": "teach_undergrad(John)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 8,
+    "q_idx": 0,
+    "gold_fol": "enhances_critical_thinking(curriculum)",
+    "gen_fol": "enhances_critical_thinking(curriculum)",
+    "is_correct": true,
+    "match_type": "string"
+  },
+  {
+    "item_idx": 18,
+    "q_idx": 0,
+    "gold_fol": "ForAll(x, Paid(x))",
+    "gen_fol": "\u2200x (Paid(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 18,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, Registered(x))",
+    "gen_fol": "\u2200x (Registered(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 30,
+    "q_idx": 1,
+    "gold_fol": "ForAll(s, (structured_plan(s) \u2227 hands_on_experiments(s) \u2227 visualization(s)) \u2192 (reinforced_comprehension(s) \u2227 improved_retention(s)))",
+    "gen_fol": "\u2200s ((structured_plan(s) \u2227 hands_on_experiments(s) \u2227 visualization(s)) \u2192 (reinforced_comprehension(s) \u2227 improved_retention(s)))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 50,
+    "q_idx": 1,
+    "gold_fol": "Exists(x, ReceivesScholarship(x))",
+    "gen_fol": "\u2200x(MaintainsHighGPA(x) \u2192 ReceivesScholarship(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 240,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, S(x) \u2192 T(x)) \u2192 Exists(x, E(x))",
+    "gen_fol": "\u2200x (T(x) \u2192 E(x)) \u2192 \u2203x (S(x) \u2227 C(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 260,
+    "q_idx": 0,
+    "gold_fol": "ForAll(x, A(x))",
+    "gen_fol": "\u2200x A(x) \u2192 \u2200x C(x) \u2192 \u2200x (\u00acE(x) \u2192 \u00acL(x)) \u2192 \u2200x (H(x) \u2192 A(x)) \u2192 \u2200x G(x) \u2192 \u2200x P(x) \u2192 \u2200x (\u00acR(x) \u2192 \u00acF(x)) \u2192 \u2200x A(x)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 270,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, StudiesRegularly(x))",
+    "gen_fol": "\u2200x (StudiesRegularly(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 280,
+    "q_idx": 0,
+    "gold_fol": "(ForAll(x, \u00acAttendsLectures(x) \u2192 \u00acTopGrades(x))) \u2192 (ForAll(x, SubmitsOnTime(x) \u2192 PassesWithDistinction(x)))",
+    "gen_fol": "\u2200x (\u00acAttendsLectures(x) \u2192 \u00acTopGrades(x)) \u2192 \u2200x (SubmitsOnTime(x) \u2192 PassesWithDistinction(x)) \u2192 \u2200x (SubmitsOnTime(x) \u2192 PassesWithDistinction(x)) \u2192 \u2200x (UniversityStudent(x)) \u2192 \u2200x (UniversityStudent(x)) \u2192 \u2203x (AttendsLectures(x)) \u2192 \u2203x (UniversityStudent(x)) \u2192 (\u2200x (\u00acAttendsLectures(x) \u2192 \u00acTopGrades(x)) \u2192 \u2200x (SubmitsOnTime(x) \u2192 PassesWithDistinction(x))) \u2192 ((\u2200x (SubmitsOnTime(x) \u2192 PassesWithDistinction(x))) \u2192 \u2200",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 190,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, F(x) \u2192 C(x))",
+    "gen_fol": "\u2200x (F(x) \u2192 C(x)) \u2192 \u2200x (S(x) \u2192 T(x)) \u2192 \u2203x (S(x) \u2227 T(x)) \u2192 \u2203x (S(x) \u2227 F(x)) \u2192 \u2200x (C(x) \u2192 T(x)) \u2192 \u2200x (C(x) \u2192 F(x)) \u2192 \u2200x (T(x) \u2192 F(x)) \u2192 \u2200x (F(x) \u2192 C(x)) \u2192 \u2200x (S(x) \u2192 T(x)) \u2192 \u2203x (S(x) \u2227 T(x)) \u2192 \u2203x (S(x) \u2227 F(x)) \u2192 \u2200x (C(x) \u2192 T(x)) \u2192 \u2200x (C(x) \u2192 F(x)) \u2192 \u2200x (",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 200,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, L(x))",
+    "gen_fol": "\u2200x (S(x) \u2192 A(x))",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 230,
+    "q_idx": 0,
+    "gold_fol": "(Exists(x, IsAskingQuestions(x)) \u2192 (ForAll(y, \u00acIsRevising(y) \u2192 \u00acIsStudying(y)) \u2227 ForAll(y, \u00acIsRevising(y) \u2192 \u00acIsAskingQuestions(y))))",
+    "gen_fol": "\u2200x (IsAskingQuestions(x) \u2192 IsRevising(x)) \u2192 \u2200y (\u00acIsRevising(y) \u2192 \u00acIsStudying(y)) \u2192 \u2200z (\u00acIsRevising(z) \u2192 \u00acIsPreparingForExam(z)) \u2192 \u2203w IsAskingQuestions(w) \u2192 \u2200x (\u00acIsRevising(x) \u2192 \u00acIsAskingQuestions(x)) \u2192 \u2200y (\u00acIsRevising(y) \u2192 \u00acIsStudying(y)) \u2192 \u2200z (\u00acIsRevising(z) \u2192 \u00acIsPreparingForExam(z)) \u2192 \u2203w IsAskingQuestions(w) \u2192 \u2200x (IsAskingQuestions(x) \u2192 IsRevising(x)) \u2192 \u2200",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 210,
+    "q_idx": 1,
+    "gold_fol": "Exists(x, T(x))",
+    "gen_fol": "\u2203x T(x)",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 220,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, S(x))",
+    "gen_fol": "\u2200x S(x) \u2192 \u2203x T(x) \u2192 \u2203x Q(x) \u2192 \u2200x (P(x) \u2192 R(x)) \u2192 \u2200x (R(x) \u2192 U(x)) \u2192 \u2200x (\u00acT(x) \u2192 \u00acU(x)) \u2192 \u2200x (\u00acU(x) \u2192 \u00acR(x)) \u2192 \u2200x (\u00acQ(x) \u2192 \u00acP(x)) \u2192 \u2203x S(x) \u2192 \u2200x (\u00acU(x) \u2192 \u00acR(x)) \u2192 \u2200x (\u00acR(x) \u2192 \u00acT(x)) \u2192 \u2200x (P(x) \u2192 U(x)) \u2192 \u2200x (R(x) \u2192 U(x)) \u2192 \u2200x (\u00acT(x) \u2192 \u00acU(x)) \u2192 \u2200",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 250,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, \u00acG(x) \u2192 \u00acI(x))",
+    "gen_fol": "\u2200x (\u00acG(x) \u2192 \u00acI(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 130,
+    "q_idx": 0,
+    "gold_fol": "ForAll(x, StoichiometricallyCorrect(x) \u2192 Balanced(x))",
+    "gen_fol": "\u2200x (StoichiometricallyCorrect(x) \u2192 Balanced(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 140,
+    "q_idx": 0,
+    "gold_fol": "RegisterDorm(Tuan)",
+    "gen_fol": "AtBK(Tuan) \u2227 StudySchedule(Tuan) \u2192 RegisterDorm(Tuan)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 140,
+    "q_idx": 0,
+    "gold_fol": "StudySchedule(Tuan)",
+    "gen_fol": "AtBK(Tuan) \u2227 StudySchedule(Tuan) \u2192 RegisterDorm(Tuan)",
+    "is_correct": false,
+    "match_type": "none"
+  },
+  {
+    "item_idx": 120,
+    "q_idx": 0,
+    "gold_fol": "Exists(x, SubmittedThesis(x))",
+    "gen_fol": "\u2203x (SubmittedThesis(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  },
+  {
+    "item_idx": 150,
+    "q_idx": 1,
+    "gold_fol": "ForAll(x, Manager(x))",
+    "gen_fol": "\u2200x (Manager(x))",
+    "is_correct": true,
+    "match_type": "logic"
+  }
+]
